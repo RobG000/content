@@ -13,7 +13,7 @@ browser-compat: javascript.builtins.Date
 ---
 <div>{{JSRef}}</div>
 
-<p>JavaScript <strong><code>Date</code></strong> objects represent a single moment in time in a platform-independent format. <code>Date</code> objects contain a <code>Number</code> that represents milliseconds since 1 January 1970 UTC.</p>
+<p>JavaScript <strong><code>Date</code></strong> objects represent a single moment in time. <code>Date</code> objects contain a <code>Number</code> (a time value) that represents milliseconds since 1 January 1970 UTC.</p>
 
 <div class="notecard note">
 <p><strong>Note:</strong> TC39 is working on <a href="https://tc39.es/proposal-temporal/docs/index.html">Temporal</a>, a new Date/Time API. Read more about it on the <a href="https://blogs.igalia.com/compilers/2020/06/23/dates-and-times-in-javascript/">Igalia blog</a>. It is not yet ready for production use!</p>
@@ -23,7 +23,7 @@ browser-compat: javascript.builtins.Date
 
 <h3 id="The_ECMAScript_epoch_and_timestamps">The ECMAScript epoch and timestamps</h3>
 
-<p>A JavaScript date is fundamentally specified as the number of milliseconds that have elapsed since midnight on January 1, 1970, UTC. This date and time are not the same as the <strong>UNIX epoch </strong>(the number of seconds that have elapsed since midnight on January 1, 1970, UTC), which is the predominant base value for computer-recorded date and time values.</p>
+<p>A JavaScript date is specified as the number of milliseconds that have elapsed since midnight on January 1, 1970, UTC. This date and time are not the same as the <strong>UNIX epoch </strong>(the number of seconds that have elapsed since midnight on January 1, 1970, UTC), which is the predominant base value for computer-recorded date and time values.</p>
 
 <p><strong>Note:</strong> It's important to keep in mind that while the time value at the heart of a Date object is UTC, the basic methods to fetch the date and time or its components all work in the local (i.e. host system) time zone and offset.</p>
 
